@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Heart Doctor</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/util.css">
+</head>
+
+<body>
+    <h1>Little Heart Doctor</h1>
+    <p>Little Heart Doctor is running.</p>
+    <div>
+        <div id="big" style="display: inline-block;">
+            <div id="pie_chart_container" style="display: flex;">
+                <script src="https://unpkg.com/topojson@3"></script>
+                <div id="pie_chart" style="display: flex;"> </div>
+                <script type="module" src="js/pie_chart.js"></script>
+            </div>
+            <div id="star_chart_container" style="display: flex;">
+                <script src="https://unpkg.com/topojson@3"></script>
+                <div id="star_chart"> </div>
+                <script type="module" src="js/star_chart.js"></script>
+            </div>
+        </div>
+
+        <div id="statistic_bar_container" style="display: inline-block;vertical-align: top;">
+            <script src="https://unpkg.com/topojson@3"></script>
+            <div id="statistic_bar"> </div>
+            <script type="module" src="js/statistic_bar.js"></script>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
