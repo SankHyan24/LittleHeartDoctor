@@ -3,8 +3,8 @@ import * as d3 from "https://cdn.skypack.dev/d3@7";
 const statistic_bar = d3.select("#statistic_bar");
 
 
-const width = 960;
-const height = 500;
+const width = 2260;
+const height = 1000;
 function bumps(m) {
     const values = [];
 
@@ -31,9 +31,10 @@ function bumps(m) {
 
     return values;
 }
+
 var margin = ({ top: 0, right: 0, bottom: 10, left: 0 })
 
-const m = 58
+const m = 100
 
 const n = 5
 
@@ -132,12 +133,21 @@ var layout = "stacked"
 var chart = StatisticBar();
 statistic_bar.node().append(chart);
 chart.update(layout);
+const form = document.querySelector("#statistic_bar_form");
 
 // 每隔0.5秒更新一次
-setInterval(function () {
+const interval = setInterval(function () {
     layout = layout === "stacked" ? "grouped" : "stacked";
     chart.update(layout);
 }, 5000);
+// onclick form
+// form.addEventListener("click", function () {
+//     console.log(this.value)
+// });
 
-
-
+form.addEventListener("change", function () {
+    console.log(this.radio.value);
+    layout = this.radio.value;
+    chart.update(layout);
+    clearInterval(interval);
+});
