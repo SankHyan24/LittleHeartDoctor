@@ -1,6 +1,7 @@
 embed*
 *result*
 checkpoints
+*.csv
 
 
 # Byte-compiled / optimized / DLL files
