@@ -4,6 +4,12 @@ checkpoints
 *.csv
 
 
+# js server
+bs.config
+node_modules/
+package-lock.json
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
