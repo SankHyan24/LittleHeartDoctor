@@ -34,3 +34,21 @@ How to run the code:
 
 Simulatenously run input.py and output.py.
 
+## Environment Set
+### 1. Python Env
+```shell
+pip install -r requirements.txt
+```
+
+### 2. NodeJS Env
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+nvm install 18.12.0
+nvm use 18.12.0
+node -v
+```
+
+### 3. Install NodeJS Packages
+```shell
+npm install
+```

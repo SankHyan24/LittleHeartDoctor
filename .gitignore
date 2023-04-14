@@ -5,7 +5,7 @@ checkpoints
 
 
 # js server
-bs.config
+db.json
 node_modules/
 package-lock.json
 
@@ -26,7 +26,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
