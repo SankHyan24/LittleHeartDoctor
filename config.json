@@ -1,9 +1,0 @@
-{
-    "client": "mysql",
-    "connection": {
-        "host": "scitbb.top",
-        "user": "sunc",
-        "password": "sunchuan24",
-        "database": "BS"
-    }
-}
