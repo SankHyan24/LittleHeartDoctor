@@ -2,6 +2,7 @@ embed*
 *result*
 checkpoints
 *.csv
+datas/
 
 
 # js server

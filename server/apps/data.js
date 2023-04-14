@@ -9,6 +9,6 @@ module.exports = {
 
     run_eval_script: () => {
         // return run_python_script_sync(path.join(__dirname, "../../app/test.py"))
-        return run_python_script_sync("./app/test.py")
+        return run_python_script_sync("./app/eval.py")
     }
 };
